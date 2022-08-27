@@ -50,14 +50,14 @@ let self = this;
 Promise.all(lf.main.b(['f1'])).then(()=>{
 
 
-lf.main.c(f,g).then(r=>{
+
 
 
 $('img').attr({draggable:false});
 
 
 
-});
+
 })
 
 
