@@ -5,7 +5,7 @@ let lf = {};
 
 lf.main = (function() {
 	
-var a =  function(){
+let a =  function(){
 
 let self = this;
 
@@ -26,13 +26,13 @@ $('img').attr({draggable:false});
 
 });
 }
-var b = function(a1){
+let b = function(a1){
 let a2 = [];
 Array.from(a1, (a) => a2.push(lf.main.c('matrix/web/src/'+a,lf.main.d()+'js')));
 return a2;
 }
 
-var c = function(s,i,t = 0, z = 'script'){
+let c = function(s,i,t = 0, z = 'script'){
 return new Promise(function(a,b) {	
 let c = '?ver='+lf.main.d(10); let e = $('head'); 
 if(t){
@@ -57,13 +57,19 @@ else {
      style.setAttribute('rel','stylesheet');
      style.setAttribute('media','all');
  document.head.append(style);
+
+
 }
-}
+
 else {
 a(true);
 }
+});
 
 }
+
+
+
 var d = function(l = 6){
 
    let a  = '';
