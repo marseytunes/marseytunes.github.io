@@ -64,7 +64,8 @@ $('img').attr({draggable:false});
 }
 var b = function(a1){
 let a2 = [];
-Array.from(a1, (a) => a2.push(lf.main.c('matrix/web/src/'+a,lf.main.d()+'js')));
+Array.from(a1, (a) => a2.push(lf.main.c('/matrix/web/src/'+a,lf.main.d()+'js')));
+console.log(a2);
 return a2;
 }
 
