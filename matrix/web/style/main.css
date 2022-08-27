@@ -7,6 +7,10 @@
 display:flex
 };
 
+.flex_aic {
+align-items: center;
+}
+
 .icon_s {
 height: 40px;
 }
