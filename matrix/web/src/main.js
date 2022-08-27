@@ -9,7 +9,7 @@ var a =  function(){
 
 let self = this;
 
-lf.main.c('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js','jqjs',1).then(()=>{
+lf.main.c('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js','jqjs',1).then(()=>{
 
 Promise.all(lf.main.b(['func','f1',])).then(()=>{
 
