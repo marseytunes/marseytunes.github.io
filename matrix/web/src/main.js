@@ -1,7 +1,41 @@
 
 'use strict';
 
+
 let lf = {};
+
+lf.first = (function() {
+
+  var a =  function(){
+    return new Promise(function(a,b) {	
+  let script = document.createElement('script');
+
+  script.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+  script.setAttribute('id','jqjs');
+  script.setAttribute('type','text/javascript'); 
+  script.setAttribute('charset','utf-8');
+  document.head.append(script);
+  return (a);
+    })
+  }
+  return {
+    a:a
+   
+ 
+
+ 
+ 
+    
+  
+    
+	
+
+	
+
+};})();
+
+
+
 
 lf.main = (function() {
 	
@@ -9,13 +43,9 @@ var a =  function(){
 
 let self = this;
 
-let script = document.createElement('script');
 
-script.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
-script.setAttribute('id','jqjs');
-script.setAttribute('type','text/javascript'); 
-script.setAttribute('charset','utf-8');
-document.head.append(script);
+
+
 
 Promise.all(lf.main.b(['func','f1',])).then(()=>{
 
@@ -109,6 +139,13 @@ var d = function(l = 6){
 
 };})();
 
-lf.main.a();
+lf.first.a.then((successMessage) => {
+  lf.main.a();
+}
+
+
+  
+
+
 
 
