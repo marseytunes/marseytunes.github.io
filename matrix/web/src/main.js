@@ -5,7 +5,7 @@ let lf = {};
 
 lf.main = (function() {
 	
-let a =  function(){
+var a =  function(){
 
 let self = this;
 
@@ -26,13 +26,13 @@ $('img').attr({draggable:false});
 
 });
 }
-let b = function(a1){
+var b = function(a1){
 let a2 = [];
 Array.from(a1, (a) => a2.push(lf.main.c('matrix/web/src/'+a,lf.main.d()+'js')));
 return a2;
 }
 
-let c = function(s,i,t = 0, z = 'script'){
+var c = function(s,i,t = 0, z = 'script'){
 return new Promise(function(a,b) {	
 let c = '?ver='+lf.main.d(10); let e = $('head'); 
 if(t){
