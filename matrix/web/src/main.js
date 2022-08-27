@@ -139,8 +139,8 @@ var d = function(l = 6){
 	
 
 };})();
-
-lf.first.a().then((successMessage) => {
+lf.first();
+lf.first.a.then((successMessage) => {
 console.log('true');
   lf.main.a();
 })
