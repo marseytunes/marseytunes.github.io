@@ -139,7 +139,8 @@ var d = function(l = 6){
 
 };})();
 
-lf.first.a.then((successMessage) => {
+lf.first.a().then((successMessage) => {
+
   lf.main.a();
 })
 
