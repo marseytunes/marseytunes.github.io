@@ -1,3 +1,8 @@
+
+:root {
+--c-m-orange: #ee4921;
+
+}
 .flex {
 display:flex
 };
@@ -5,3 +10,4 @@ display:flex
 .icon_s {
 height: 40px;
 }
+
