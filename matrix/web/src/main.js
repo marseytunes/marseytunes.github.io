@@ -46,7 +46,7 @@ script.setAttribute('id',i);
 script.setAttribute('type','text/javascript'); 
 script.setAttribute('charset','utf-8');
 document.head.append(script);
-
+a(true);
 }
 else {
  let style = document.createElement('link');
@@ -57,13 +57,11 @@ else {
      style.setAttribute('rel','stylesheet');
      style.setAttribute('media','all');
  document.head.append(style);
-
+ a(true);
 
 }
 
-else {
-a(true);
-}
+
 });
 
 }
