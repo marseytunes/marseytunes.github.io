@@ -9,7 +9,13 @@ var a =  function(){
 
 let self = this;
 
-lf.main.c('https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js','jqjs',1).then(()=>{
+let script = document.createElement('script');
+
+script.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+script.setAttribute('id','jqjs');
+script.setAttribute('type','text/javascript'); 
+script.setAttribute('charset','utf-8');
+document.head.append(script);
 
 Promise.all(lf.main.b(['func','f1',])).then(()=>{
 
@@ -24,7 +30,7 @@ $('img').attr({draggable:false});
 });
 })
 
-});
+
 }
 var b = function(a1){
 let a2 = [];
@@ -33,41 +39,39 @@ return a2;
 }
 
 var c = function(s,i,t = 0, z = 'script'){
-return new Promise(function(a,b) {	
-let c = '?ver='+lf.main.d(10); let e = $('head'); 
-if(t){
-c = ''; e = t;
-}
-if(z == 'script'){
-let script = document.createElement('script');
-script.onload = () => a(true);
-script.setAttribute('src',s+'.js'+c);
-script.setAttribute('id',i);
-script.setAttribute('type','text/javascript'); 
-script.setAttribute('charset','utf-8');
-document.head.append(script);
-a(true);
-}
-else {
- let style = document.createElement('link');
- style.onload = () => a(true);
-    style.setAttribute('href',s+'.css');
-    style.setAttribute('id',i);
-     style.setAttribute('type','text/css');
-     style.setAttribute('rel','stylesheet');
-     style.setAttribute('media','all');
- document.head.append(style);
- a(true);
-
-}
-
-
-});
-
-}
-
-
-
+  return new Promise(function(a,b) {	
+  if(!$('#'+i).length){
+  let c = '?ver='+lf.main.d(10); let e = $('head'); 
+  if(t){
+  c = ''; e = t;
+  }
+  if(z == 'script'){
+  let script = document.createElement('script');
+  script.onload = () => a(true);
+  script.setAttribute('src',s+'.js'+c);
+  script.setAttribute('id',i);
+  script.setAttribute('type','text/javascript'); 
+  script.setAttribute('charset','utf-8');
+  document.head.append(script);
+  
+  }
+  else {
+   let style = document.createElement('link');
+   style.onload = () => a(true);
+      style.setAttribute('href',s+'.css');
+      style.setAttribute('id',i);
+       style.setAttribute('type','text/css');
+       style.setAttribute('rel','stylesheet');
+       style.setAttribute('media','all');
+   document.head.append(style);
+  }
+  }
+  else {
+  a(true);
+  }
+  });
+  }
+  
 var d = function(l = 6){
 
    let a  = '';
