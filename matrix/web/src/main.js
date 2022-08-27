@@ -34,7 +34,6 @@ return a2;
 
 var c = function(s,i,t = 0, z = 'script'){
 return new Promise(function(a,b) {	
-if(!$('#'+i).length){
 let c = '?ver='+lf.main.d(10); let e = $('head'); 
 if(t){
 c = ''; e = t;
@@ -63,7 +62,7 @@ else {
 else {
 a(true);
 }
-});
+
 }
 var d = function(l = 6){
 
