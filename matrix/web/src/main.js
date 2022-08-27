@@ -47,7 +47,7 @@ let self = this;
 
 
 
-Promise.all(lf.main.b(['func','f1',])).then(()=>{
+Promise.all(lf.main.b(['f1'])).then(()=>{
 
 
 lf.main.c(f,g).then(r=>{
